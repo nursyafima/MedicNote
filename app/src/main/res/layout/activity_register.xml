@@ -78,10 +78,10 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="50dp"
-        android:background="@drawable/logofix"
+        android:background="@drawable/logo_medicnote"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/logofix" />
+        tools:srcCompat="@drawable/logo_medicnote" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
