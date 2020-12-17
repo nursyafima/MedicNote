@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahPasienActivity">
+
+    <EditText
+        android:id="@+id/editAddNamaPasien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Nama"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="18dp"/>
+
+    <EditText
+        android:id="@+id/editAddKeluhanPasien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Keluhan"
+        app:layout_constraintTop_toBottomOf="@id/editAddNamaPasien"
+        android:layout_marginTop="18dp"/>
+
+    <EditText
+        android:id="@+id/editAddPenyakitSebelum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Penyakit Sebelumnya"
+        app:layout_constraintTop_toBottomOf="@id/editAddKeluhanPasien"
+        android:layout_marginTop="18dp"/>
+
+    <EditText
+        android:id="@+id/editAddTinggiBeratBadan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tinggi Badan / Berat Badan"
+        app:layout_constraintTop_toBottomOf="@id/editAddPenyakitSebelum"
+        android:layout_marginTop="18dp"/>
+
+    <EditText
+        android:id="@+id/editAddTensi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tensi"
+        app:layout_constraintTop_toBottomOf="@id/editAddTinggiBeratBadan"
+        android:layout_marginTop="18dp"/>
+
+    <EditText
+        android:id="@+id/editAddHasilDiagnosa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hasil Diagnosa dan Keterangan"
+        app:layout_constraintTop_toBottomOf="@id/editAddTensi"
+        android:layout_marginTop="18dp"/>
+
+    <EditText
+        android:id="@+id/editAddResepObat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Resep Obat"
+        app:layout_constraintTop_toBottomOf="@id/editAddHasilDiagnosa"
+        android:layout_marginTop="18dp"/>
+
+    <Button
+        android:id="@+id/btnTambahPasienNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editAddResepObat"
+        android:layout_marginTop="64dp"
+        android:text="Tambahkan Pasien"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
