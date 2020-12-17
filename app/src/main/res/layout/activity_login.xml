@@ -6,31 +6,82 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <EditText
-        android:id="@+id/editEmailLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+    <Button
+        android:id="@+id/btnLoginNow"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorLink="#3151A3"
+        android:textIsSelectable="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPasswordLogin" />
 
     <EditText
         android:id="@+id/editPasswordLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        app:layout_constraintTop_toBottomOf="@id/editEmailLogin"
-        android:layout_marginTop="8dp"
-        />
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmailLogin"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="12dp"/>
 
-    <Button
-        android:id="@+id/btnLoginNow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login Accept"
-        app:layout_constraintTop_toBottomOf="@id/editPasswordLogin"
-        android:layout_marginTop="8dp"
-        />
+    <EditText
+        android:id="@+id/editEmailLogin"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_baseline_alternate_email_24"
+        android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_tv" />
+
+    <TextView
+        android:id="@+id/login_tv"
+        android:layout_width="111dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:autoText="false"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="LOGIN"
+        android:textAllCaps="false"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="135dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/logofix" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
