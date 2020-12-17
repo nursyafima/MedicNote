@@ -8,68 +8,189 @@
 
     <EditText
         android:id="@+id/editAddNamaPasien"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:hint="Nama"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="18dp"/>
+        android:paddingLeft="10dp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/custom_input"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNama" />
 
     <EditText
         android:id="@+id/editAddKeluhanPasien"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Keluhan"
-        app:layout_constraintTop_toBottomOf="@id/editAddNamaPasien"
-        android:layout_marginTop="18dp"/>
+        android:paddingLeft="10dp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKeluhan" />
 
     <EditText
         android:id="@+id/editAddPenyakitSebelum"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Penyakit Sebelumnya"
-        app:layout_constraintTop_toBottomOf="@id/editAddKeluhanPasien"
-        android:layout_marginTop="18dp"/>
+        android:paddingLeft="10dp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewPenyakitSebelumnya" />
 
     <EditText
         android:id="@+id/editAddTinggiBeratBadan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Tinggi Badan / Berat Badan"
-        app:layout_constraintTop_toBottomOf="@id/editAddPenyakitSebelum"
-        android:layout_marginTop="18dp"/>
+        android:paddingLeft="10dp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTinggiBeratBadan" />
 
     <EditText
         android:id="@+id/editAddTensi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Tensi"
-        app:layout_constraintTop_toBottomOf="@id/editAddTinggiBeratBadan"
-        android:layout_marginTop="18dp"/>
+        android:paddingLeft="10dp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTensi" />
+    "/>
 
     <EditText
         android:id="@+id/editAddHasilDiagnosa"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Hasil Diagnosa dan Keterangan"
-        app:layout_constraintTop_toBottomOf="@id/editAddTensi"
-        android:layout_marginTop="18dp"/>
+        android:paddingLeft="10dp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewHasilDiagnosa" />
 
     <EditText
         android:id="@+id/editAddResepObat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Resep Obat"
-        app:layout_constraintTop_toBottomOf="@id/editAddHasilDiagnosa"
-        android:layout_marginTop="18dp"/>
+        android:paddingLeft="10dp"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewResepObat" />
 
     <Button
         android:id="@+id/btnTambahPasienNow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/editAddResepObat"
-        android:layout_marginTop="64dp"
-        android:text="Tambahkan Pasien"/>
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Tambahkan Pasien"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textColorLink="#3151A3"
+        android:textIsSelectable="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editAddResepObat" />
 
+    <TextView
+        android:id="@+id/textViewNama"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Nama"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewKeluhan"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Keluhan"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAddNamaPasien" />
+
+    <TextView
+        android:id="@+id/textViewPenyakitSebelumnya"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Penyakit Sebelumnya (Jika ada)"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAddKeluhanPasien" />
+
+    <TextView
+        android:id="@+id/textViewTinggiBeratBadan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Tinggi / Berat Badan"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAddPenyakitSebelum" />
+
+    <TextView
+        android:id="@+id/textViewTensi"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Tensi"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAddTinggiBeratBadan" />
+
+    <TextView
+        android:id="@+id/textViewHasilDiagnosa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Hasil Diagnosa dan Keterangan"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAddTensi" />
+
+    <TextView
+        android:id="@+id/textViewResepObat"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Resep Obat"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAddHasilDiagnosa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
