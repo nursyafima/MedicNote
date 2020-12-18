@@ -3,83 +3,117 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp">
 
-    <TextView
-        android:id="@+id/tvNama"
-        android:layout_width="15dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="A"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/labelNama" />
 
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="58dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="48dp"
-        android:background="@drawable/custom_button"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Lihat"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/labelAksi" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/labelHasil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="28dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Hasil Diagnosa"
-        app:layout_constraintEnd_toStartOf="@+id/labelAksi"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/labelNama"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/rvNama"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
 
-    <TextView
-        android:id="@+id/labelNama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="28dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Nama"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.035"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            tools:text="Nama" />
 
-    <TextView
-        android:id="@+id/tvHasil"
-        android:layout_width="11dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="B"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/btn"
-        app:layout_constraintHorizontal_bias="0.414"
-        app:layout_constraintStart_toEndOf="@+id/tvNama"
-        app:layout_constraintTop_toBottomOf="@+id/labelHasil" />
+        <TextView
+            android:id="@+id/rvKeluhan"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:text="Keluhan" />
 
-    <TextView
-        android:id="@+id/labelAksi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="60dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Aksi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/rvPenyakit"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:text="Penyakit Sebelumnya" />
+
+        <TextView
+            android:id="@+id/rvTinggiBeratBadan"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:text="Tinggi Berat Badan" />
+
+        <TextView
+            android:id="@+id/rvTensi"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:text="Tensi" />
+
+        <TextView
+            android:id="@+id/rvHasil"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins"
+
+            android:textSize="16sp"
+            tools:text="Diagnosa" />
+
+        <TextView
+            android:id="@+id/rvResepObat"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:text="ResepObat" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

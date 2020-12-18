@@ -43,7 +43,7 @@ class Adapter(
                 val penyakit = "Penyakit Sebelumnya   : ${rvPasien.penyakit}"
                 val tinggiBeratBadan = "Tinggi Berat Badan  : ${rvPasien.tinggiBeratBadan}"
                 val tensi = "Tensi : ${rvPasien.tensi}"
-                val resep = "No. HP : ${rvPasien.resepObat}"
+                val resep = "Resep Obat : ${rvPasien.resepObat}"
 
                 rvNama.text = nama
                 rvHasil.text = hasil
@@ -76,7 +76,7 @@ class Adapter(
 
     private fun showDialogDel(strId: String) {
         //dialog pop delete
-        val builder = androidx.appcompat.app.AlertDialog.Builder(context, R.style.ThemeOverlay_MaterialComponents_Dialog_Alert)
+        val builder = androidx.appcompat.app.AlertDialog.Builder(context)
             .setTitle("Hapus Data")
             .setMessage("Yakin nih mau hapus?")
             .setPositiveButton(android.R.string.yes) { dialog, which ->
@@ -90,7 +90,7 @@ class Adapter(
         //menghapus data berdasarkan id
         collection.document(id)
             .delete()
-            .addOnCompleteListener { Toast.makeText(context, "Succes Hapus data", Toast.LENGTH_SHORT).show() }
+            .addOnCompleteListener { Toast.makeText(context, "Success Hapus data", Toast.LENGTH_SHORT).show() }
             .addOnFailureListener { Toast.makeText(context, "Gagal Hapus data", Toast.LENGTH_SHORT).show() }
     }
 
